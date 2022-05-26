@@ -9,8 +9,78 @@
   </head>
   <body>
     <div class="container__outer">
-      <div class="container__image"></div>
-      <div class="container__content"></div>
+      <div class="container__image">
+        <div class="logo-background">
+          <img class="logo-image" src="img/logo.png" alt="Logo" />
+          <h1 class="logo">MOOK</h1>
+        </div>
+      </div>
+      <div class="container__content">
+        <div class="description">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <br />
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <form action="#" class="form" method="post">
+          <h2 class="form__title">Let's do this!</h2>
+          <div class="form__contents">
+            <p>
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" required />
+            </p>
+            <p>
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" id="last-name" required />
+            </p>
+            <p>
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+              <label for="phone">PHONE NUMBER</label>
+              <input
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                name="phone"
+                id="phone"
+              />
+            </p>
+            <p>
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                minlength="8"
+                size="8"
+                placeholder="8 characters minimum"
+                required
+              />
+            </p>
+            <p>
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                minlength="8"
+                size="8"
+                required
+              />
+            </p>
+          </div>
+          <div class="form__button">
+            <button class="btn">Create Account</button>
+            <p class="log-in-text">
+              Already have an account? <a href="#" class="log-in">Log in</a>
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

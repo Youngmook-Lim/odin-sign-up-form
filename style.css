@@ -1,5 +1,20 @@
+/* - Font-sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Sora:wght@300;400;700&display=swap");
+
+:root {
+  --primary-color: #edf6f9;
+  --secondary-color: #ffddd2;
+  --tertiary-color: #83c5be;
+  --btn-color: #006d77;
+  --accent-color: #e29578;
+  --logo-background: rgba(0, 0, 0, 0.3);
+  /* --logo-color: ; */
+}
 
 * {
   margin: 0;
@@ -12,6 +27,124 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 5rem;
+  font-family: "Sora", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
 }
+
+.container__outer {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-color);
+  display: flex;
+}
+
+.container__image {
+  display: flex;
+  position: relative;
+  background-image: url("img/img-1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 40vw;
+}
+
+.logo-background {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+
+  background-color: var(--logo-background);
+  height: 9.6rem;
+}
+
+.logo-image {
+  height: 100%;
+  /* color: black; */
+}
+
+.logo {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 7.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container__content {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  line-height: 1.2;
+  background-color: var(--secondary-color);
+  padding: 2.4rem;
+  width: 100%;
+  padding-bottom: 3.2rem;
+}
+
+.form {
+  background-color: var(--tertiary-color);
+  padding: 2.4rem;
+  width: 100%;
+}
+
+.form__contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 75%;
+  column-gap: 9.6rem;
+  row-gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.form__title {
+  margin-bottom: 2.4rem;
+}
+
+input {
+  appearance: none;
+  width: 100%;
+  height: 3rem;
+}
+
+label {
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.form__button {
+  margin-top: 2.4rem;
+}
+
+.btn {
+  margin-bottom: 2.4rem;
+  border: none;
+  padding: 1.2rem 2.4rem;
+  background-color: var(--btn-color);
+  border-radius: 9px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.log-in-text {
+  font-size: 1.4rem;
+}
+
+.log-in {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* - Font-sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */ ;
