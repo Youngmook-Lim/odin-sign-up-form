@@ -11,6 +11,7 @@
   --secondary-color: #ffddd2;
   --tertiary-color: #83c5be;
   --btn-color: #006d77;
+  --btn-color-shadow: hsla(185, 100%, 23%, 0.5);
   --accent-color: #e29578;
   --logo-background: rgba(0, 0, 0, 0.3);
   /* --logo-color: ; */
@@ -31,6 +32,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   line-height: 1;
+  color: #333;
 }
 
 .container__outer {
@@ -46,7 +48,7 @@ body {
   background-image: url("img/img-1.jpg");
   background-position: center;
   background-size: cover;
-  width: 40vw;
+  width: 35vw;
 }
 
 .logo-background {
@@ -75,7 +77,7 @@ body {
 }
 
 .container__content {
-  width: 60vw;
+  width: 65vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,32 +89,42 @@ body {
   background-color: var(--secondary-color);
   padding: 2.4rem;
   width: 100%;
-  padding-bottom: 3.2rem;
+  padding-bottom: 3.6rem;
 }
 
 .form {
   background-color: var(--tertiary-color);
   padding: 2.4rem;
+  padding-top: 3.6rem;
   width: 100%;
+}
+
+.form__title {
+  margin-bottom: 3.6rem;
 }
 
 .form__contents {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 75%;
+  width: 60%;
   column-gap: 9.6rem;
   row-gap: 2.4rem;
-  margin-bottom: 2.4rem;
-}
-
-.form__title {
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.6rem;
 }
 
 input {
   appearance: none;
   width: 100%;
-  height: 3rem;
+  height: 3.2rem;
+  border-radius: 9px;
+  border: 2.5px solid var(--btn-color);
+  padding: 0.8rem;
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid var(--btn-color);
+  box-shadow: 0 0 0 0.2rem var(--btn-color-shadow);
 }
 
 label {
@@ -121,11 +133,11 @@ label {
 }
 
 .form__button {
-  margin-top: 2.4rem;
+  margin-top: 3.6rem;
 }
 
 .btn {
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.6rem;
   border: none;
   padding: 1.2rem 2.4rem;
   background-color: var(--btn-color);
@@ -141,7 +153,7 @@ label {
 
 .log-in {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--btn-color);
 }
 
 /* - Font-sizes (px):
