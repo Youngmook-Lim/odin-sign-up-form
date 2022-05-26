@@ -40,6 +40,7 @@ body {
   width: 100vw;
   background-color: var(--primary-color);
   display: flex;
+  flex-flow: row wrap;
 }
 
 .container__image {
@@ -56,6 +57,7 @@ body {
   top: 30%;
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
@@ -106,8 +108,9 @@ body {
 .form__contents {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 60%;
-  column-gap: 9.6rem;
+  min-width: 50rem;
+  max-width: 80rem;
+  column-gap: 8rem;
   row-gap: 2.4rem;
   margin-bottom: 3.6rem;
 }
@@ -155,8 +158,3 @@ label {
   text-decoration: none;
   color: var(--btn-color);
 }
-
-/* - Font-sizes (px):
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-- SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */ ;
